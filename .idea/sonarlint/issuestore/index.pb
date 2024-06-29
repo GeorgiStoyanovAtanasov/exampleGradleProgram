@@ -2573,3 +2573,5 @@ l
 <demo/src/test/java/com/example/demo/CatFactServiceTests.java,d\c\dce22340497c7b74dcb22f716adf53f21c4076a1
 n
 >demo/src/test/java/com/example/demo/CatFactControllerTest.java,7\e\7e3485a9199665516dbf1cbd5f501bdff335afbe
+m
+=demo/src/test/java/com/example/demo/DemoApplicationTests.java,a\6\a6850b6808e4fe1d7176852192046945dc099721

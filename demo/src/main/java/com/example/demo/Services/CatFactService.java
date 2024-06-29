@@ -25,7 +25,7 @@ public class CatFactService {
     private CatFactRepository catFactRepository;
     private CatFactClient catFactClient;
     @Autowired
-    CatFactService(CatFactRepository catFactRepository, CatFactClient catFactClient){
+    public CatFactService(CatFactRepository catFactRepository, CatFactClient catFactClient){
         this.catFactRepository = catFactRepository;
         this.catFactClient = catFactClient;
     }

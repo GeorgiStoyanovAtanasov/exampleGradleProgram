@@ -52,3 +52,8 @@ sonar {
 		property "sonar.host.url", "https://sonarcloud.io"
 	}
 }
+sonarqube {
+	properties {
+		property "sonar.gradle.skipCompile", "true"
+	}
+}

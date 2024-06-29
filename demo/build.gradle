@@ -73,9 +73,21 @@ tasks.jacocoTestReport {
 		csv.required = false
 	}
 }
-test {
-	useJUnitPlatform()
-	finalizedBy(jacocoTestReport)  // Ensure the JaCoCo report is generated after tests
+tasks.withType(JacocoCoverageVerification) {
+	violationRules {
+		rule {
+			element = "BUNDLE"
+			limit {
+				counter = "INSTRUCTION"
+				value = "COVEREDRATIO"
+				minimum = "0.1".toBigDecimal()
+			}
+		}
+	}
 }
+	test {
+		useJUnitPlatform()
+		finalizedBy(jacocoTestReport)  // Ensure the JaCoCo report is generated after tests
+	}
 
 

@@ -1,4 +1,4 @@
 
-š	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(¼ÒÿÿÿÿÿJ$88f7737f-7e0f-4da0-8ec7-1d0ebc7dcb0c
+š	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(¼ÒÿÿÿÿÿJ$2d9e0fb9-f943-46c4-aa40-8de60da022da
 ‘
-java:S1128"URemove this unused import 'org.springframework.boot.autoconfigure.domain.EntityScan'.(›Ù¯J$2a7355bf-760e-4aaa-abcd-1d92af7ace4d
+java:S1128"URemove this unused import 'org.springframework.boot.autoconfigure.domain.EntityScan'.(›Ù¯J$11ca9f9d-8577-4480-a69b-65164e5fbc56

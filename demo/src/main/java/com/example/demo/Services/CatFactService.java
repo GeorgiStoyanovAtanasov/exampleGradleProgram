@@ -22,10 +22,13 @@ import java.io.InputStreamReader;
 
 @Service
 public class CatFactService {
-    @Autowired
     private CatFactRepository catFactRepository;
-    @Autowired
     private CatFactClient catFactClient;
+    @Autowired
+    CatFactService(CatFactRepository catFactRepository, CatFactClient catFactClient){
+        this.catFactRepository = catFactRepository;
+        this.catFactClient = catFactClient;
+    }
     public String getCatFact() throws IOException {
         String url = "https://catfact.ninja/fact";
 

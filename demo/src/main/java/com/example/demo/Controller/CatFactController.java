@@ -1,4 +1,4 @@
-package com.example.demo.Controllers;
+package com.example.demo.Controller;
 
 import com.example.demo.Entities.CatFact;
 import com.example.demo.Repositories.CatFactRepository;
@@ -12,14 +12,11 @@ import java.io.IOException;
 @RestController
 @RequestMapping("/api")
 public class CatFactController {
-    @Autowired
     private CatFactRepository catFactRepository;
-    @Autowired
-
     private final CatFactService catFactService;
-
     @Autowired
-    public CatFactController(CatFactService catFactService) {
+    public CatFactController(CatFactRepository catFactRepository,CatFactService catFactService) {
+        this.catFactRepository = catFactRepository;
         this.catFactService = catFactService;
     }
 
